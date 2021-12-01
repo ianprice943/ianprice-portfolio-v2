@@ -13,17 +13,17 @@ const Header: React.FC = () => {
             </div>
             <nav className="flex flex-grow-0">
                 <ul className="flex flex-row mt-auto mb-auto">
-                    <li className="pr-2">
+                    <li className="pr-2 hover:underline">
                         <Link href="/">
                             Home
                         </Link>
                     </li>
-                    <li className="pr-2">
+                    <li className="pr-2 hover:underline">
                         <Link href="/resume">
                             Resume
                         </Link>
                     </li>
-                    <li className="">
+                    <li className="hover:underline">
                         <Link href="/portfolio">
                             Portfolio
                         </Link>
