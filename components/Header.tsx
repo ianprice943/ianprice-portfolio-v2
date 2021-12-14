@@ -27,17 +27,17 @@ const Header: React.FC = () => {
             </div>
             <nav className="flex sm:flex-grow-0">
                 <ul className="flex sm:flex-row sm:mt-auto sm:mb-auto">
-                    <li className="pr-2">
+                    <li className="sm:pr-2 hover:underline">
                         <Link href="/">
                             Home
                         </Link>
                     </li>
-                    <li className="pr-2">
+                    <li className="sm:pr-2 hover:underline">
                         <Link href="/resume">
                             Resume
                         </Link>
                     </li>
-                    <li className="sm:pr-2">
+                    <li className="sm:pr-2 hover:underline">
                         <Link href="/portfolio">
                             Portfolio
                         </Link>
