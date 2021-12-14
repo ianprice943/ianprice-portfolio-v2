@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="flex-grow pr-2 pl-2">
+      <main className="sm:flex-grow pr-2 pl-2">
         Test Main
       </main>
       <Footer />
