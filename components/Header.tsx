@@ -1,11 +1,13 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
 import ThemeSwitcher from './ThemeSwitcher';
 
-interface HeaderProps {
-    //used to set active
-}
+const Header: React.FC<{active:string}> = ({active}) => {
 
-const Header: React.FC = () => {
+    useEffect(() => {
+        setActiveLink(active);
+    }, []);
+
     return (
         <header className="p-2 flex flex-col-reverse sm:flex-row">
             <div className="sm:flex-grow">
@@ -33,6 +35,16 @@ const Header: React.FC = () => {
             <ThemeSwitcher />
         </header>
     )
+}
+
+function setActiveLink(active:string) {
+    if (active === 'home') {
+        document.querySelector('li:first-of-type')?.classList.add('underline');
+    } else if (active === 'resume') {
+        document.querySelector('li:nth-of-type(2)')?.classList.add('underline');
+    } else if (active === 'portfolio') {
+        document.querySelector('li:last-of-type')?.classList.add('underline');
+    }
 }
 
 export default Header;

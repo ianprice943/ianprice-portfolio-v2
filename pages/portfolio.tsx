@@ -6,13 +6,13 @@ import Footer from '../components/Footer';
 
 const Portfolio: NextPage = () => {
   return (
-    <div className="h-screen flex flex-col">
+    <div className="flex flex-col dark:bg-gray-700 dark:text-white">
       <Head>
         <title>Ian Price - Resume</title>
         <meta name="description" content="Ian Price's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <Header active="portfolio"/>
       <main className="flex-grow pr-2 pl-2">
         Test Portfolio
       </main>
