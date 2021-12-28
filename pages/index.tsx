@@ -17,11 +17,11 @@ const Home: NextPage = () => {
       <main className="flex-grow pr-2 pl-2">
         <section className="flex flex-col md:flex-row"> {/* Rework to use grid? Image is way too big on desktop */}
           <div className="block w-2/3 mx-auto md:w-1/3 md:m-2.5">
-            <Image src={profilePicture} alt="An image of Ian" layout='intrinsic'/>
+            <Image src={profilePicture} alt="An image of Ian" layout='intrinsic' className="rounded-xl" />
           </div>
           <div className="text-2xl md:w-1/2 md:mx-auto">
             <p className="mb-2">Ian is a 24 year old web developer based in Columbus, Ohio. He holds a Bachelor of Science in Computer Science from Miami University, and graduated in 2019.</p>
-            <p className="mb-2">Ian's focus is on front-end web development, with over two years of E-Commerce experience. He takes designs and brings them to life on the web while ensuring responsiveness, cross browser compatibility, and WCAG2+ADA compliance.</p>
+            <p className="mb-2">Ian&apos;s focus is on front-end web development, with over two years of E-Commerce experience. He takes designs and brings them to life on the web while ensuring responsiveness, cross browser compatibility, and WCAG2+ADA compliance.</p>
             <p>Recently Ian has jumped into full-stack ASP.NET development at the Columbus based CRM company WebPresented.</p>
           </div>
         </section>

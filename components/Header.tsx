@@ -6,7 +6,7 @@ const Header: React.FC<{active:string}> = ({active}) => {
 
     useEffect(() => {
         setActiveLink(active);
-    }, []);
+    }, [active]);
 
     return (
         <header className="p-2 flex flex-col-reverse sm:flex-row">
