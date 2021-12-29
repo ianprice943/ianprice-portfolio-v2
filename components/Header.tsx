@@ -9,18 +9,18 @@ const Header: React.FC<{active:string}> = ({active}) => {
     }, [active]);
 
     return (
-        <header className="p-2 flex flex-col-reverse sm:flex-row">
+        <header className="p-2 flex flex-col-reverse sm:flex-row md:px-4 lg:px-8 xl:px-16 2xl:px-32">
             <div className="sm:flex-grow">
-                <h1 className="text-4xl">Ian Price</h1>
+                <h1 className="text-4xl text-center sm:text-left">Ian Price</h1>
             </div>
-            <nav className="flex sm:flex-grow-0">
-                <ul className="flex justify-evenly mx-auto flex-row sm:my-auto">
+            <nav className="flex text-lg sm:flex-grow-0">
+                <ul className="flex mx-auto flex-row sm:my-auto">
                     <li className="sm:pr-2 hover:underline">
                         <Link href="/">
                             Home
                         </Link>
                     </li>
-                    <li className="px-2 sm:pr-2 hover:underline">
+                    <li className="px-2 sm:pr-2 sm:pl-0 hover:underline">
                         <Link href="/resume">
                             Resume
                         </Link>

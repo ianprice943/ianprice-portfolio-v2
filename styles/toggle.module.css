@@ -1,0 +1,12 @@
+#moon {
+  background-image: url('../public/images/moon.svg');
+  background-size: 1.25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sun {
+  background-image: url('../public/images/sun.svg');
+  background-size: 1.25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,16 +1,23 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+    font-family: Raleway;
+    src: url("/Raleway-VariableFont_wght.ttf");
+    style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+    font-family: Raleway-Italic;
+    src: url("/Raleway-Italic-VariableFont_wght.ttf");
+    style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+#__next {
+    min-height: 100vh;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }

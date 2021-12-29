@@ -1,10 +1,11 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
+
 const MyDocument: Document = () => {
     
     
     return (
-        <Html lang="en">
+        <Html lang="en" prefix="og: http://ogp.me/ns#">
             <Head />
             <body>
                 <Main />
