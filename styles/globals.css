@@ -1,16 +1,16 @@
 @font-face {
     font-family: Raleway;
-    src: url("/Raleway-VariableFont_wght.ttf");
+    src: url("/fonts/Raleway-VariableFont_wght.ttf");
     style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-display: swap;
 }
 
 @font-face {
     font-family: Raleway-Italic;
-    src: url("/Raleway-Italic-VariableFont_wght.ttf");
+    src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf");
     style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-display: swap;
 }
 
