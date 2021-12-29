@@ -35,10 +35,10 @@ const ThemeSwitcher: React.FC = () => {
 
     return (
         <div className="flex justify-end">
-            <button id={style.sun} onClick={() => setUserTheme('light')} className="outline-2px border-0 border-black bg-yellow-300 w-8 h-8 rounded-xl my-auto mr-1 hover:bg-yellow-100 transform hover:scale-125 focus-within:scale-125" aria-label="activate light theme"></button>
-            <button id={style.moon} onClick={() => setUserTheme('dark')} className="outline-2px border-0 border-black bg-gray-300 w-8 h-8 rounded-xl my-auto hover:bg-gray-500 transform hover:scale-125 focus-within:scale-125" aria-label="activate dark theme"></button>
+            <button id={style.sun} onClick={() => setUserTheme('light')} className="outline-2px border-0 border-black bg-yellow-300 w-10 h-10 sm:w-8 sm:h-8 rounded-xl my-auto mr-1 hover:bg-yellow-100 transform hover:scale-125 focus-within:scale-125" aria-label="activate light theme"></button>
+            <button id={style.moon} onClick={() => setUserTheme('dark')} className="outline-2px border-0 border-black bg-gray-300 w-10 h-10 sm:w-8 sm:h-8 rounded-xl my-auto hover:bg-gray-500 transform hover:scale-125 focus-within:scale-125" aria-label="activate dark theme"></button>
         </div>
     );
 }
 
-export default ThemeSwitcher
+export default ThemeSwitcher;

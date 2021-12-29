@@ -14,13 +14,13 @@ const Header: React.FC<{active:string}> = ({active}) => {
                 <h1 className="text-4xl">Ian Price</h1>
             </div>
             <nav className="flex sm:flex-grow-0">
-                <ul className="flex sm:flex-row sm:mt-auto sm:mb-auto">
-                    <li className="sm:pr-2 hover:underline focus:border-blue-500">
+                <ul className="flex justify-evenly mx-auto flex-row sm:my-auto">
+                    <li className="sm:pr-2 hover:underline">
                         <Link href="/">
                             Home
                         </Link>
                     </li>
-                    <li className="sm:pr-2 hover:underline">
+                    <li className="px-2 sm:pr-2 hover:underline">
                         <Link href="/resume">
                             Resume
                         </Link>
