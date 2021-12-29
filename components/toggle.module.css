@@ -18,18 +18,13 @@ input:checked ~ .icon {
   background-repeat: no-repeat;
 }
 
-.faux-dot {
-  transform: translateX(100%);
-  --tw-bg-opacity: 1;
-  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
-}
-.faux-moon {
+#moon {
   background-image: url('../public/moon.svg');
   background-size: 1.25rem;
   background-position: center;
   background-repeat: no-repeat;
 }
-.faux-sun {
+#sun {
   background-image: url('../public/sun.svg');
   background-size: 1.25rem;
   background-position: center;

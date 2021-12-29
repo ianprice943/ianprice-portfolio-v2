@@ -15,7 +15,7 @@ const Header: React.FC<{active:string}> = ({active}) => {
             </div>
             <nav className="flex sm:flex-grow-0">
                 <ul className="flex sm:flex-row sm:mt-auto sm:mb-auto">
-                    <li className="sm:pr-2 hover:underline">
+                    <li className="sm:pr-2 hover:underline focus:border-blue-500">
                         <Link href="/">
                             Home
                         </Link>
