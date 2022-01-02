@@ -1,0 +1,69 @@
+{
+    "experience": [
+        {
+            "companyName": "WebPresented",
+            "companyTitle": "Systems Engineer",
+            "experienceTime": "September 2021 - Present",
+            "responsibilities": [
+                "",
+                "I work as a Systems Engineer on the Support Team to develop custom solutions for WebPresented's customers. I use C#, HTML, CSS, VueJS, and T-SQL to accomplish my tasks."
+            ]
+        },
+        {
+            "companyName": "Sogeti - USA",
+            "companyTitle": "Consultant",
+            "experienceTime": "June 2019 - September 2021",
+            "responsibilities": [
+                "As a consultant at Sogeti, I had the pleasure of working for several brands on their front end",
+                "maurices: I was both an A/B tester and a front-end developer for maurices, using a stack including JavaScript(ES5/6), TypeScript, HTML5, CSS3 and SCSS. I conducted many customer facing tests on the maurices website, and used the data collected from those tests to fuel future experiences and optimizations. He also followed guideliens for WCAG2 and ADA compliance to ensure as many people as possible can experience the content I created. To stay organized, I used Atlassian JIRA to receive and proritize tasks as well as to communicate with stakeholders, and Atlassian Confluence to document his code and processes.",
+                "Abbott Nutrition: I helped update WebNova, a formula calculation application used in neonatal care. The update included an ASP.NET upgrade from 3.5 to 4.7.1, while also updating their front end for IE11 compatibility. I used JavaScript(ES5), HTML5, CSS3, and C# as the tech stack.",
+                "Justice: I worked on the homepage and banners using HTML5, CSS3, and JavaScript(ES5). I also rewrote ",
+                "DressBarn: I was a front end developer using a JavaScript(ES5), HTML5, and CSS3 stack."
+            ]
+        },
+        {
+            "companyName": "OCLC",
+            "companyTitle": "Network Intern",
+            "experienceTime": "May 2018 - August 2018",
+            "responsibilities": [
+                "As a Network Intern for OCLC, Ian's responsibilities included:",
+                "Mapping the topology of the network across multiple sites.",
+                "Conducting VPC audits.",
+                "Configuring Cisco IOS & Meraki network switches."
+            ]
+        },
+        {
+            "companyName": "MAPFRE Stadium (Now Historic Crew Stadium)",
+            "companyTitle": "IT Intern",
+            "experienceTime": "June 2017 - August 2017",
+            "responsibilities": [
+                "At MAPFRE Stadium Ian managed virtual machines and provided technical support for over 90 employees."
+            ]
+        },
+        {
+            "companyName": "Revolution Group",
+            "companyTitle": "IT Intern",
+            "experienceTime": "May 2016 - August 2016",
+            "responsibilities": [
+                "At Revolution group Ian had the following responsibilities:",
+                "Providing technical support for over 70 companies in and around Ohio.",
+                "Remotely updating software.",
+                "Setting up hardware for clients."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "schoolName": "Miami University",
+            "graduateLevel": "Undergraduate",
+            "degreeEarned": "Bachelor of Science in Computer Science, 3.52 GPA",
+            "educationTime": "August 2015 - May 2019"
+        }
+    ],
+    "skills": [
+        "",
+        "",
+        "",
+        ""
+    ]
+}

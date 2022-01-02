@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Card from '../components/Card';
+import PCard from '../components/PCard';
 import profilePicture from '../public/images/LinkedIn.png';
 
 const Home: NextPage = () => {
@@ -41,10 +41,10 @@ const Home: NextPage = () => {
                         <Image src={profilePicture} alt="An image of Ian" layout='intrinsic' className="rounded-xl" />
                     </div>
                     <div className="text-xl m-2.5 mr-0 md:w-6/12 md:ml-auto">
-                        <Card cardContent={cardContent1} />
-                        <Card cardContent={cardContent2} />
-                        <Card cardContent={cardContent3} />
-                        <Card cardContent={cardContent4} />
+                        <PCard cardContent={cardContent1} />
+                        <PCard cardContent={cardContent2} />
+                        <PCard cardContent={cardContent3} />
+                        <PCard cardContent={cardContent4} />
                     </div>
                 </section>
             </main>

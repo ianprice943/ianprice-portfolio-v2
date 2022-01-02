@@ -1,10 +1,39 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import resumeData from '../public/data/resume.json';
+import { useState } from 'react';
 
-const Resume: NextPage = () => {
+interface ResumeData {
+    experience: JobData[],
+    education: EducationData[],
+    skills: string[]
+}
+
+interface JobData {
+    companyName: string,
+    companyTitle: string,
+    experienceTime: string,
+    responsibilities: string[]
+}
+
+interface EducationData {
+    schoolName: string,
+    graduateLevel: string,
+    degreeEarned: string,
+    educationTime: string
+}
+
+const Resume: NextPage<ResumeData> = (data: ResumeData) => {
+
+    const [resumeData, setData] = useState([]);
+
+    const jobs = data.experience;
+    const education = data.education;
+    const skills = data.skills;
+
     return (
         <div className="flex flex-col dark:bg-gray-700 dark:text-white">
             <Head>
@@ -24,12 +53,51 @@ const Resume: NextPage = () => {
                 <meta property="twitter:image" content="/public/LinkedIn.png" />
             </Head>
             <Header active="resume"/>
-            <main className="flex-grow pr-2 pl-2">
-                Test Resume
+            <main className="flex-grow px-2 pb-6 md:px-4 lg:px-8 xl:px-16 2xl:px-32">
+                <section aria-label="experience">
+                    <h2>Experience</h2>
+                    <ul>
+                        {jobs?.map((job: JobData, i: number) => {
+                            return <p key={i}>{job.companyName}</p>
+                        })}
+                    </ul>
+                </section>
+                <section aria-label="education">
+                    <h2>Education</h2>
+                    <ul>
+                        {education?.map((school: EducationData, i: number) => {
+                            return <p key={i}>{school.schoolName}</p>
+                        })}
+                    </ul>
+                </section>
+                <section aria-label="skills">
+                    <h1>Skills</h1>
+                    <u>
+                        {skills?.map((skill: string, i: number) => {
+                            return <p key={i}>{skill}</p>
+                        })}
+                    </u>
+                </section>
             </main>
             <Footer />
         </div>
     )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+    const data: ResumeData = await resumeData;
+
+    if(!data) {
+        return {
+            notFound: true
+        }
+    }
+
+    return {
+        props: {
+            data
+        }
+    }
 }
 
 export default Resume;
