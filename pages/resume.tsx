@@ -1,41 +1,20 @@
 import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import resumeData from '../public/data/resume.json';
-import { useState } from 'react';
+import data from '../public/data/resume.json';
+import ResumeCard from '../components/ResumeCard';
+import { ResumeData, JobData, EducationData } from 'ResumeTypes';
+import EducationCard from '../components/EducationCard';
+import SkillCard from '../components/SkillCard';
 
-interface ResumeData {
-    experience: JobData[],
-    education: EducationData[],
-    skills: string[]
-}
-
-interface JobData {
-    companyName: string,
-    companyTitle: string,
-    experienceTime: string,
-    responsibilities: string[]
-}
-
-interface EducationData {
-    schoolName: string,
-    graduateLevel: string,
-    degreeEarned: string,
-    educationTime: string
-}
-
-const Resume: NextPage<ResumeData> = (data: ResumeData) => {
-
-    const [resumeData, setData] = useState([]);
-
-    const jobs = data.experience;
-    const education = data.education;
-    const skills = data.skills;
+const Resume: NextPage<ResumeData> = (resumeData: ResumeData) => {
+    const jobs: JobData[] = resumeData.data.experience;
+    const education: EducationData[] = resumeData.data.education;
+    const skills: string[] = resumeData.data.skills;
 
     return (
-        <div className="flex flex-col dark:bg-gray-700 dark:text-white">
+        <div className="relative flex flex-col dark:bg-gray-700 dark:text-white">
             <Head>
                 <title>Ian Price - Resume</title>
                 <meta name="description" content="The resume page of Ian Price's Portfolio" />
@@ -55,28 +34,30 @@ const Resume: NextPage<ResumeData> = (data: ResumeData) => {
             <Header active="resume"/>
             <main className="flex-grow px-2 pb-6 md:px-4 lg:px-8 xl:px-16 2xl:px-32">
                 <section aria-label="experience">
-                    <h2>Experience</h2>
-                    <ul>
+                    <h2 className="text-2xl">Experience</h2>
+                    <div className="p-1 md:grid md:grid-cols-2">
                         {jobs?.map((job: JobData, i: number) => {
-                            return <p key={i}>{job.companyName}</p>
+                            return <ResumeCard key={i} job={job} />
                         })}
-                    </ul>
+                    </div>
                 </section>
                 <section aria-label="education">
-                    <h2>Education</h2>
-                    <ul>
+                    <h2 className="text-2xl">Education</h2>
+                    <div className="p-1">
                         {education?.map((school: EducationData, i: number) => {
-                            return <p key={i}>{school.schoolName}</p>
+                            return <EducationCard key={i} school={school} />
                         })}
-                    </ul>
+                    </div>
                 </section>
                 <section aria-label="skills">
-                    <h1>Skills</h1>
-                    <u>
-                        {skills?.map((skill: string, i: number) => {
-                            return <p key={i}>{skill}</p>
-                        })}
-                    </u>
+                    <h2 className="text-2xl">Skills</h2>
+                    <div className="p-1">
+                        <ul>
+                            {skills?.map((skill: string, i: number) => {
+                                return <SkillCard key={i} skill={skill} />
+                            })}
+                        </ul>
+                    </div>
                 </section>
             </main>
             <Footer />
@@ -84,8 +65,7 @@ const Resume: NextPage<ResumeData> = (data: ResumeData) => {
     )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-    const data: ResumeData = await resumeData;
+export const getStaticProps: GetStaticProps = async (context) => {
 
     if(!data) {
         return {

@@ -5,8 +5,8 @@
             "companyTitle": "Systems Engineer",
             "experienceTime": "September 2021 - Present",
             "responsibilities": [
-                "",
-                "I work as a Systems Engineer on the Support Team to develop custom solutions for WebPresented's customers. I use C#, HTML, CSS, VueJS, and T-SQL to accomplish my tasks."
+                "At my current role, I work as a Systems Engineer on the Support Team.",
+                "I develop custom solutions for WebPresented's customers using C#, HTML, CSS, Vue.js, and T-SQL to accomplish my tasks."
             ]
         },
         {
@@ -14,10 +14,10 @@
             "companyTitle": "Consultant",
             "experienceTime": "June 2019 - September 2021",
             "responsibilities": [
-                "As a consultant at Sogeti, I had the pleasure of working for several brands on their front end",
-                "maurices: I was both an A/B tester and a front-end developer for maurices, using a stack including JavaScript(ES5/6), TypeScript, HTML5, CSS3 and SCSS. I conducted many customer facing tests on the maurices website, and used the data collected from those tests to fuel future experiences and optimizations. He also followed guideliens for WCAG2 and ADA compliance to ensure as many people as possible can experience the content I created. To stay organized, I used Atlassian JIRA to receive and proritize tasks as well as to communicate with stakeholders, and Atlassian Confluence to document his code and processes.",
-                "Abbott Nutrition: I helped update WebNova, a formula calculation application used in neonatal care. The update included an ASP.NET upgrade from 3.5 to 4.7.1, while also updating their front end for IE11 compatibility. I used JavaScript(ES5), HTML5, CSS3, and C# as the tech stack.",
-                "Justice: I worked on the homepage and banners using HTML5, CSS3, and JavaScript(ES5). I also rewrote ",
+                "As a consultant at Sogeti, I had the pleasure of working for several brands on their front end.",
+                "maurices: I was both an A/B tester and a front-end developer for maurices, using a stack including JavaScript(ES5/6), TypeScript, HTML5, CSS3 and SCSS. I conducted many customer facing tests on the maurices website, and used the data collected from those tests to fuel future experiences and optimizations. I also followed guidelines for WCAG2 and ADA compliance to ensure as many people as possible could experience the content I created. To stay organized, I used Atlassian JIRA to receive and proritize tasks as well as to communicate with stakeholders, and Atlassian Confluence to document his code and processes.",
+                "Abbott Laboratories: I helped update WebNova, a baby formula calculation application used in neonatal care. The update included an ASP.NET upgrade from 3.5 to 4.7.1, while also updating their front-end for IE11 compatibility. I used JavaScript(ES5), HTML5, CSS3, and C# as the tech stack.",
+                "Justice: I worked on the homepage and banners using HTML5, CSS3, and JavaScript(ES5). I also rewrote their size charts to be responsive and easier to understand.",
                 "DressBarn: I was a front end developer using a JavaScript(ES5), HTML5, and CSS3 stack."
             ]
         },
@@ -26,7 +26,7 @@
             "companyTitle": "Network Intern",
             "experienceTime": "May 2018 - August 2018",
             "responsibilities": [
-                "As a Network Intern for OCLC, Ian's responsibilities included:",
+                "As a Network Intern for OCLC, my responsibilities included:",
                 "Mapping the topology of the network across multiple sites.",
                 "Conducting VPC audits.",
                 "Configuring Cisco IOS & Meraki network switches."
@@ -61,9 +61,23 @@
         }
     ],
     "skills": [
-        "",
-        "",
-        "",
-        ""
+        "Javascript - Intermediate",
+        "HTML5 - Intermediate",
+        "CSS3 - Intermediate",
+        "TypeScript - Intermediate",
+        "Git, Github, Bitbucket - Intermediate",
+        "React.js - Intermediate",
+        "Vue.js - Intermediate",
+        "WCAG and ADA Compliance - Intermediate",
+        "NodeJS/npm - Intermediate",
+        "C# - Intermediate",
+        "MSSQL Server - Intermediate",
+        "SCSS - Novice",
+        "PHP - Novice",
+        "MySQL/MariaDB - Novice",
+        "VMWare/Virtual Box - Novice",
+        "MacOS, Linux(Arch/Ubuntu), and Windows",
+        "Microsoft Office Suite",
+        "Microsoft Visio"
     ]
 }

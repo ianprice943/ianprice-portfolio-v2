@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 const Portfolio: NextPage = () => {
     return (
-        <div className="flex flex-col dark:bg-gray-700 dark:text-white">
+        <div className="relative flex flex-col dark:bg-gray-700 dark:text-white">
             <Head>
                 <title>Ian Price - Portfolio</title>
                 <meta name="description" content="The portfolio page of Ian Price's Portfolio" />
