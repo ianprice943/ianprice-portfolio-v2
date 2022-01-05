@@ -43,7 +43,7 @@ const Resume: NextPage<ResumeData> = (resumeData: ResumeData) => {
                 </section>
                 <section aria-label="education">
                     <h2 className="text-2xl">Education</h2>
-                    <div className="p-1">
+                    <div className="p-1 sm:grid md:grid-cols-1 lg:grid-cols-2">
                         {education?.map((school: EducationData, i: number) => {
                             return <EducationCard key={i} school={school} />
                         })}

@@ -6,7 +6,7 @@
             "experienceTime": "September 2021 - Present",
             "responsibilities": [
                 "At my current role, I work as a Systems Engineer on the Support Team.",
-                "I develop custom solutions for WebPresented's customers using C#, HTML, CSS, Vue.js, and T-SQL to accomplish my tasks."
+                "I develop and support custom solutions for WebPresented's customers using C#, HTML, CSS, Vue.js, and T-SQL to accomplish my tasks."
             ]
         },
         {
@@ -37,7 +37,8 @@
             "companyTitle": "IT Intern",
             "experienceTime": "June 2017 - August 2017",
             "responsibilities": [
-                "At MAPFRE Stadium Ian managed virtual machines and provided technical support for over 90 employees."
+                "At MAPFRE Stadium I managed virtual machines and provided technical support for over 90 employees.",
+                "Tools I used included VMWare, Microsoft Office, Windows, and Linux"
             ]
         },
         {
@@ -76,8 +77,8 @@
         "PHP - Novice",
         "MySQL/MariaDB - Novice",
         "VMWare/Virtual Box - Novice",
-        "MacOS, Linux(Arch/Ubuntu), and Windows",
-        "Microsoft Office Suite",
-        "Microsoft Visio"
+        "MacOS, Linux(Arch/Ubuntu), and Windows - Intermediate",
+        "Microsoft Office Suite - Intermediate",
+        "Microsoft Visio - Novice"
     ]
 }
