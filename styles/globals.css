@@ -74,8 +74,10 @@ ul.progress-bar li {
 ul.progress-bar li.stop ~ li {
     background: #999;
 }
+ul.progress-bar li.stop::after,
 ul.progress-bar li.stop ~ li::after {
-    height: 0;
+    margin-left: 10px;
+    background: #999;
 }
 ul.progress-bar li::after {
     content: "";
@@ -83,6 +85,6 @@ ul.progress-bar li::after {
     bottom: 5px;
     left: 5px;
     background: #000;
-    width: 10vw;
+    width: 30vw;
     height: 5px;
 }
