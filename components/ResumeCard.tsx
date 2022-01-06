@@ -1,6 +1,5 @@
 import React from 'react';
 import { JobData } from 'ResumeTypes';
-// import styles from '../styles/article.module.css';
 
 interface cardContent {
     job: JobData
