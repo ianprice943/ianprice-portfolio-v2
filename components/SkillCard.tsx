@@ -32,7 +32,6 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
     }
 
     const progressBar: HTMLDivElement | null = document.querySelector(`.proficiency-bar${cardContent.index}`);
-    console.log(gradientString);
     if(progressBar !== null) {
             progressBar.style.backgroundImage = gradientString;
     }
