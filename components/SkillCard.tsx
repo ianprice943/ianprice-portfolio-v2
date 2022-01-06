@@ -9,7 +9,7 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
 
     let theme: string | null;
     let progressBarColor: string;
-    if(localStorage) {
+    if(typeof window !== "undefined") {
         theme = localStorage.getItem('theme');
         if(theme === 'light') {
             progressBarColor = "#555";
@@ -31,13 +31,15 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
         gradientString = `linear-gradient(to right, ${progressBarColor} 100%)`;
     }
 
-    const progressBar: HTMLDivElement | null = document.querySelector(`.proficiency-bar${cardContent.index}`);
-    if(progressBar !== null) {
-            progressBar.style.backgroundImage = gradientString;
+    if(typeof window !== "undefined") {
+        const progressBar: HTMLDivElement | null = document.querySelector(`.proficiency-bar${cardContent.index}`);
+        if(progressBar !== null) {
+                progressBar.style.backgroundImage = gradientString;
+        }
     }
 
     return (
-        <li className="relative text-center shadow-lg mb-2 sm:mr-4 rounded-xl p-4 border-gray-50 border-2  dark:bg-gray-600 dark:border-0 dark:border-gray-600">
+        <li className="text-center shadow-lg mb-2 sm:mr-4 rounded-xl p-4 border-gray-50 border-2  dark:bg-gray-600 dark:border-0 dark:border-gray-600">
             <span>{cardContent.skill.substring(0, cardContent.skill.indexOf(' -'))}</span>
             <div className={`proficiency-bar${cardContent.index} py-2 border-2 border-black rounded-xl`} aria-label="proficiency progress bar"></div>
             <ul className="pt-2 flex flex-row justify-between text-xs md:text-sm lg:text-xs xl:text-sm">
