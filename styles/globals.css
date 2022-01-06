@@ -42,7 +42,7 @@ article::-webkit-scrollbar-thumb {
 }
 
 /*progress bar*/
-
+/*
 ul.progress-bar {
     height: 20px;
     list-style: none;
@@ -88,3 +88,4 @@ ul.progress-bar li::after {
     width: 30vw;
     height: 5px;
 }
+*/

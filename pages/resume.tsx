@@ -43,7 +43,7 @@ const Resume: NextPage<ResumeData> = (resumeData: ResumeData) => {
                 </section>
                 <section aria-label="education">
                     <h2 className="text-2xl">Education</h2>
-                    <div className="p-1 sm:grid md:grid-cols-1 lg:grid-cols-2">
+                    <div className="p-1 md:grid md:grid-cols-1 lg:grid-cols-2">
                         {education?.map((school: EducationData, i: number) => {
                             return <EducationCard key={i} school={school} />
                         })}
@@ -52,9 +52,9 @@ const Resume: NextPage<ResumeData> = (resumeData: ResumeData) => {
                 <section aria-label="skills">
                     <h2 className="text-2xl">Skills</h2>
                     <div className="p-1">
-                        <ul>
+                        <ul className="sm:grid sm:grid-cols-2 lg:grid-cols-3">
                             {skills?.map((skill: string, i: number) => {
-                                return <SkillCard key={i} skill={skill} />
+                                return <SkillCard key={i} index={i} skill={skill} />
                             })}
                         </ul>
                     </div>
