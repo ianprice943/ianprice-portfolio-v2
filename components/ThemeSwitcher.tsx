@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
+import { useThemeContext } from './ThemeContext';
 import style from '../styles/toggle.module.css';
 
 const ThemeSwitcher: React.FC = () => {
     
+    const { setTheme } = useThemeContext();
 
     const setUserTheme = (curTheme: string) => {
         localStorage.setItem('theme', curTheme);
+        setTheme(curTheme);
         if(curTheme === 'light') {
             document.documentElement.classList.remove('dark');
         } else {
@@ -14,18 +17,14 @@ const ThemeSwitcher: React.FC = () => {
     }
 
     const checkUserTheme = () => {
-        if (typeof window !== undefined) {
+        if (typeof window !== "undefined") {
             if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 return 'dark';
             } else {
                 return 'light';
             }
         } else {
-            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                return 'dark';
-            } else {
-                return 'light';
-            }
+            return 'light';
         }
     }
 
@@ -36,8 +35,11 @@ const ThemeSwitcher: React.FC = () => {
         }
     }
 
+    const curTheme = checkUserTheme();
+
     useEffect(() => {
         setUserTheme(checkUserTheme());
+        setTheme(curTheme);
     });
 
     return (

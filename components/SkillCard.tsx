@@ -1,4 +1,5 @@
 import React from 'react';
+import { useThemeContext } from './ThemeContext';
 
 interface cardContent {
     skill: string,
@@ -7,18 +8,14 @@ interface cardContent {
 
 const SkillCard: React.FC<cardContent> = (cardContent) => {
 
-    let theme: string | null;
+    const { theme } = useThemeContext();
     let progressBarColor: string;
-    if(typeof window !== "undefined") {
-        theme = localStorage.getItem('theme');
-        if(theme === 'light') {
-            progressBarColor = "#555";
-        } else {
-            progressBarColor = "#FFF";
-        }
+    if(theme === 'light') {
+        progressBarColor = "#555";
     } else {
-        progressBarColor = "#777";
+        progressBarColor = "#FFF";
     }
+    
 
     let gradientString = "";
     if (cardContent.skill.includes("Novice")) {
