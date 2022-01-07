@@ -1,18 +1,32 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
-const MyDocument: Document = () => {
+// const MyDocument: Document = () => {
     
     
-    return (
-        <Html lang="en" prefix="og: http://ogp.me/ns#">
-            <Head />
-            <body>
-                <Main />
-                <NextScript />
-            </body>
-        </Html>
-    );
+//     return (
+//         <Html lang="en" prefix="og: http://ogp.me/ns#">
+//             <Head />
+//             <body>
+//                 <Main />
+//                 <NextScript />
+//             </body>
+//         </Html>
+//     );
+// }
+
+class MyDocument extends Document {
+    render() {
+        return (
+            <Html lang="en">
+                <Head />
+                <body>
+                    <Main />
+                    <NextScript />
+                </body>
+            </Html>
+        )
+    }
 }
 
 export default MyDocument;
