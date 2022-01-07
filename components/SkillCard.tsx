@@ -15,7 +15,6 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
     } else {
         progressBarColor = "#FFF";
     }
-    
 
     let gradientString = "";
     if (cardContent.skill.includes("Novice")) {
@@ -28,12 +27,24 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
         gradientString = `linear-gradient(to right, ${progressBarColor} 100%)`;
     }
 
-    if(typeof window !== "undefined") {
+    const applyProgressBar = () => {
         const progressBar: HTMLDivElement | null = document.querySelector(`.proficiency-bar${cardContent.index}`);
         if(progressBar !== null) {
-                progressBar.style.backgroundImage = gradientString;
+            console.log(gradientString);     
+            progressBar.style.backgroundImage = gradientString;
         }
     }
+
+    const progressCheck = setInterval(() => {
+        if (typeof window !== "undefined") {
+            const progressBar: HTMLDivElement | null = document.querySelector(`.proficiency-bar${cardContent.index}`);
+    
+            if(progressBar !== null) {
+                applyProgressBar();
+                clearInterval(progressCheck);
+            }
+        }
+    }, 100);
 
     return (
         <li className="text-center shadow-lg mb-2 sm:mr-4 rounded-xl p-4 border-gray-50 border-2  dark:bg-gray-600 dark:border-0 dark:border-gray-600">

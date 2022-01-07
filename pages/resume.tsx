@@ -38,7 +38,7 @@ const Resume: NextPage<ResumeData> = (resumeData: ResumeData) => {
                 </Head>
                 <Header active="resume"/>
                 <main className="flex-grow px-2 pb-6 md:px-4 lg:px-8 xl:px-16 2xl:px-32">
-                    <section aria-label="experience">
+                    <section id="experience" aria-label="experience">
                         <h2 className="text-2xl">Experience</h2>
                         <div className="p-1 md:grid md:grid-cols-2">
                             {jobs?.map((job: JobData, i: number) => {
@@ -46,7 +46,7 @@ const Resume: NextPage<ResumeData> = (resumeData: ResumeData) => {
                             })}
                         </div>
                     </section>
-                    <section aria-label="education">
+                    <section id="education" aria-label="education">
                         <h2 className="text-2xl">Education</h2>
                         <div className="p-1 md:grid md:grid-cols-1 lg:grid-cols-2">
                             {education?.map((school: EducationData, i: number) => {
@@ -54,7 +54,7 @@ const Resume: NextPage<ResumeData> = (resumeData: ResumeData) => {
                             })}
                         </div>
                     </section>
-                    <section aria-label="skills">
+                    <section id="skills" aria-label="skills">
                         <h2 className="text-2xl">Skills</h2>
                         <div className="p-1">
                             <ul className="sm:grid sm:grid-cols-2 lg:grid-cols-3">
