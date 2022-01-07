@@ -29,9 +29,21 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
 
     const applyProgressBar = () => {
         const progressBar: HTMLDivElement | null = document.querySelector(`.proficiency-bar${cardContent.index}`);
-        if(progressBar !== null) {
-            console.log(gradientString);     
+        if (progressBar !== null) {
             progressBar.style.backgroundImage = gradientString;
+            let percentFull = "0";
+            if (gradientString.includes('25%')) {
+                percentFull = "25";
+            } else if (gradientString.includes('50%')) {
+                percentFull = "50";
+            } else if (gradientString.includes('75%')) {
+                percentFull = "75";
+            } else if (gradientString.includes('100%')) {
+                percentFull = "100";
+            }
+            progressBar.setAttribute("aria-valuenow", percentFull);
+            progressBar.setAttribute("aria-valuemin", "0");
+            progressBar.setAttribute("aria-valuemax", "100");
         }
     }
 
@@ -49,7 +61,7 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
     return (
         <li className="text-center shadow-lg mb-2 sm:mr-4 rounded-xl p-4 border-gray-50 border-2  dark:bg-gray-600 dark:border-0 dark:border-gray-600">
             <span>{cardContent.skill.substring(0, cardContent.skill.indexOf(' -'))}</span>
-            <div className={`proficiency-bar${cardContent.index} py-2 border-2 border-black rounded-xl`} aria-label="proficiency progress bar"></div>
+            <div className={`proficiency-bar${cardContent.index} py-2 border-2 border-black rounded-xl`} role="progressbar"></div>
             <ul className="pt-2 flex flex-row justify-between text-xs md:text-sm lg:text-xs xl:text-sm">
                 <li {...cardContent.skill.includes("None") ? "aria-label='Current Skill Level'" : ""}>None</li>
                 <li {...cardContent.skill.includes("Novice") ? "aria-label='Current Skill Level'" : ""}>Novice</li>
