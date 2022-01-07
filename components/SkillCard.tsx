@@ -59,9 +59,9 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
     }, 100);
 
     return (
-        <li className="text-center shadow-lg mb-2 sm:mr-4 rounded-xl p-4 border-gray-50 border-2  dark:bg-gray-600 dark:border-0 dark:border-gray-600">
+        <li className="text-center shadow-lg mb-2 sm:mr-4 rounded-xl p-4 border-gray-50 border-2  dark:bg-gray-600 dark:border-0 dark:border-gray-600" tabIndex={0}>
             <span>{cardContent.skill.substring(0, cardContent.skill.indexOf(' -'))}</span>
-            <div className={`proficiency-bar${cardContent.index} py-2 border-2 border-black rounded-xl`} role="progressbar"></div>
+            <div className={`proficiency-bar${cardContent.index} py-2 border-2 border-black rounded-xl`} aria-label="skill proficiency progress bar" role="progressbar"></div>
             <ul className="pt-2 flex flex-row justify-between text-xs md:text-sm lg:text-xs xl:text-sm">
                 <li {...cardContent.skill.includes("None") ? "aria-label='Current Skill Level'" : ""}>None</li>
                 <li {...cardContent.skill.includes("Novice") ? "aria-label='Current Skill Level'" : ""}>Novice</li>
