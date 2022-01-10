@@ -1,5 +1,6 @@
 import React from 'react';
 import { useThemeContext } from './ThemeContext';
+import dynamic from 'next/dynamic';
 
 interface cardContent {
     skill: string,
@@ -48,13 +49,11 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
     }
 
     const progressCheck = setInterval(() => {
-        if (typeof window !== "undefined") {
-            const progressBar: HTMLDivElement | null = document.querySelector(`.proficiency-bar${cardContent.index}`);
-    
-            if(progressBar !== null) {
-                applyProgressBar();
-                clearInterval(progressCheck);
-            }
+        const progressBar: HTMLDivElement | null = document.querySelector(`.proficiency-bar${cardContent.index}`);
+
+        if(progressBar !== null) {
+            applyProgressBar();
+            clearInterval(progressCheck);
         }
     }, 100);
 
@@ -73,4 +72,8 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
     );
 }
 
-export default SkillCard;
+
+export default dynamic(() => Promise.resolve(SkillCard), {
+    ssr: false
+});
+// export default SkillCard;
