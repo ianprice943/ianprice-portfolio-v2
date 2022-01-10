@@ -76,4 +76,3 @@ const SkillCard: React.FC<cardContent> = (cardContent) => {
 export default dynamic(() => Promise.resolve(SkillCard), {
     ssr: false
 });
-// export default SkillCard;
