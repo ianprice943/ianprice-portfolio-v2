@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useThemeContext } from './ThemeContext';
 import style from '../styles/toggle.module.css';
+import dynamic from 'next/dynamic';
 
 const ThemeSwitcher: React.FC = () => {
     
@@ -17,12 +18,8 @@ const ThemeSwitcher: React.FC = () => {
     }
 
     const checkUserTheme = () => {
-        if (typeof window !== "undefined") {
-            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                return 'dark';
-            } else {
-                return 'light';
-            }
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            return 'dark';
         } else {
             return 'light';
         }
@@ -50,4 +47,6 @@ const ThemeSwitcher: React.FC = () => {
     );
 }
 
-export default ThemeSwitcher;
+export default dynamic(() => Promise.resolve(ThemeSwitcher), {
+    ssr:false
+});
