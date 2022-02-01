@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 
     const cardContent3 = "I take designs and bring them to life on the web while ensuring responsiveness, cross browser compatibility, and WCAG2 and ADA compliance. A more accessible web is a more inclusive web."
 
-    const cardContent4 = "Recently I've has jumped into full-stack ASP.NET development at the Columbus based CRM company WebPresented.";
+    const cardContent4 = "I'm currently searching for the next step in my career, and am looking to continue growing my front-end skills!";
 
     return (
         <div className="relative flex flex-col h-full dark:bg-gray-700 dark:text-white min-h-screen">
