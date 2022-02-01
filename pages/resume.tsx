@@ -29,12 +29,12 @@ const Resume: NextPage<ResumeData> = (resumeData: ResumeData) => {
                     <meta property="og:url" content="//www.ianprice943.dev/resume" />
                     <meta property="og:title" content="Ian Price - Resume" />
                     <meta property="og:description" content="The resume page of Ian Price's Portfolio" />
-                    <meta property="og:image" content="/public/LinkedIn.png" />
+                    <meta property="og:image" content="//www.ianprice943.dev/images/LinkedIn.png" />
                     <meta property="twitter:card" content="summary_large_image" />
                     <meta property="twitter:url" content="//www.ianprice943.dev/resume" />
                     <meta property="twitter:title" content="Ian Price - Resume" />
                     <meta property="twitter:description" content="The resume page of Ian Price's Portfolio" />
-                    <meta property="twitter:image" content="/public/LinkedIn.png" />
+                    <meta property="twitter:image" content="//www.ianprice943.dev/images/LinkedIn.png" />
                 </Head>
                 <Header active="resume"/>
                 <main className="flex-grow px-2 pb-6 md:px-4 lg:px-8 xl:px-16 2xl:px-32">
