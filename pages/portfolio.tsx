@@ -44,7 +44,7 @@ const Portfolio: NextPage = () => {
                         <article className="shadow-lg mb-2 md:mr-4 rounded-xl p-4 lg:p-2 xl:p-4 border-gray-50 border-4 dark:bg-gray-600 dark:border-gray-600">
                             <h2 className="text-center text-lg font-semibold">Pokemon Mystery Dungeon Rescue Team DX Starters</h2>
                             <p className="text-center text-sm py-2">A website I developed to learn Vue.js, and later React and Typescript</p>
-                            <a href="https://pmdrtdx-react.herokuapp.com/" aria-label="Website for a game, written in React" className="my-auto">
+                            <a href="https://pmdrtdx-react.herokuapp.com/" aria-label="Website for a game, written in React" className="flex my-auto justify-center">
                                 <Image src={pokemonImage} alt="Pokemon Mystery Dungeon Rescue Team DX Logo" layout='intrinsic' />
                             </a>
                             <ul className="flex justify-around">
@@ -66,7 +66,7 @@ const Portfolio: NextPage = () => {
                         <article className="shadow-lg mb-2 md:mr-4 rounded-xl p-4 lg:p-2 xl:p-4 border-gray-50 border-4 dark:bg-gray-600 dark:border-gray-600">
                             <h2 className="text-center text-lg font-semibold">Three.js Playground</h2>
                             <p className="text-center text-sm py-2">A small playground I developed to learn the basics of Three.js.</p>
-                            <a href="https://ip-threejs-playground.netlify.app/" aria-label="A website showing off some basics of Three.js" className="my-auto">
+                            <a href="https://ip-threejs-playground.netlify.app/" aria-label="A website showing off some basics of Three.js" className="flex y-auto justify-center">
                                 <Image src={threeImage} alt="Three.js rendered sphere" layout='intrinsic' className='rounded-xl' />
                             </a>
                         </article>
