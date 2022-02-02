@@ -8,6 +8,7 @@ import { useState } from 'react';
 import gitHubImage from '../public/images/GitHub_Logo_White.png';
 import pokemonImage from '../public/images/PMDRTDXLogo.png';
 import wkMediation from '../public/images/wk_mediation_logo_horiz_graygold.png';
+import threeImage from '../public/images/three.png';
 
 const Portfolio: NextPage = () => {
     const [ theme, setTheme ] = useState<string>("light");
@@ -55,11 +56,18 @@ const Portfolio: NextPage = () => {
                                 </li>
                             </ul>
                         </article>
-                        <article className="shadow-lg mb-2 md:mr-4 rounded-xl p-4 lg:p-2 xl:p-4 border-gray-50 border-4 dark:bg-gray-600 dark:border-gray-600">
+                        <article className="flex flex-col shadow-lg mb-2 md:mr-4 rounded-xl p-4 lg:p-2 xl:p-4 border-gray-50 border-4 dark:bg-gray-600 dark:border-gray-600">
                             <h2 className="text-center text-lg font-semibold">William Kampf Mediation</h2>
                             <p className="text-center text-sm py-2">An introductory site and blog for a client&apos;s Mediation business.</p>
                             <a href="https://wkmediation.com/" aria-label="Website for a mediator in Los Angeles" className="my-auto">
                                 <Image src={wkMediation} alt="WK Mediation Logo" layout='intrinsic' />
+                            </a>
+                        </article>
+                        <article className="shadow-lg mb-2 md:mr-4 rounded-xl p-4 lg:p-2 xl:p-4 border-gray-50 border-4 dark:bg-gray-600 dark:border-gray-600">
+                            <h2 className="text-center text-lg font-semibold">Three.js Playground</h2>
+                            <p className="text-center text-sm py-2">A small playground I developed to learn the basics of Three.js.</p>
+                            <a href="https://ip-threejs-playground.netlify.app/" aria-label="A website showing off some basics of Three.js" className="my-auto">
+                                <Image src={threeImage} alt="Three.js rendered sphere" layout='intrinsic' className='rounded-xl' />
                             </a>
                         </article>
                     </section>
