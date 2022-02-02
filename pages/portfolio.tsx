@@ -67,7 +67,7 @@ const Portfolio: NextPage = () => {
                             <h2 className="text-center text-lg font-semibold">Three.js Playground</h2>
                             <p className="text-center text-sm py-2">A small playground I developed to learn the basics of Three.js.</p>
                             <a href="https://ip-threejs-playground.netlify.app/" aria-label="A website showing off some basics of Three.js" className="my-auto">
-                                <Image src={threeImage} alt="Three.js rendered sphere" layout='intrinsic' />
+                                <Image src={threeImage} alt="Three.js rendered sphere" layout='intrinsic' className='rounded-xl' />
                             </a>
                         </article>
                     </section>
