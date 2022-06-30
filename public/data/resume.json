@@ -7,7 +7,8 @@
             "responsibilities": [
                 "At g2o, I'm doing Frontend Development for clients across the greater Columbus metropolitan area.",
                 "I'm using tools such as Angular and React to make client wireframes come to life in a responsive and accessible manner.",
-                "Most recently I worked with CASS Information Systems as a frontend developer for an internal application using Angular, SCSS, Bootstrap 5, and Azure DevOps."
+                "CASS Information Systems: I worked as a frontend developer for an internal application for CASS using Angular, SCSS, Bootstrap 5, and Azure DevOps.",
+                "Innovate Ohio Project: Most recently I've been working for IOP; helping revamp the ODRC, and OMJ websites using SCSS and React.js."
             ]
         },
         {
@@ -56,7 +57,7 @@
             "companyTitle": "IT Intern",
             "experienceTime": "May 2016 - August 2016",
             "responsibilities": [
-                "At Revolution group Ian had the following responsibilities:",
+                "At Revolution group I had the following responsibilities:",
                 "Providing technical support for over 70 companies in and around Ohio.",
                 "Remotely updating software.",
                 "Setting up hardware for clients."
@@ -75,6 +76,7 @@
         "Javascript - Advanced",
         "HTML5 - Advanced",
         "CSS3 - Advanced",
+        "SCSS - Advanced",
         "Git, Github, Bitbucket, TFS - Advanced",
         "WCAG2 and ADA Compliance - Advanced",
         "Typescript - Intermediate",
@@ -84,7 +86,6 @@
         "Next.js - Intermediate",
         "C# - Intermediate",
         "MSSQL Server/T-SQL - Intermediate",
-        "SCSS - Intermediate",
         "Tailwindcss - Intermediate",
         "Adobe Target - Intermediate",
         "Dynamic Yield - Intermediate",

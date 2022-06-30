@@ -12,13 +12,13 @@ const Home: NextPage = () => {
 
     const [theme, setTheme] = useState<string>("light");
 
-    const cardContent1 = "Greetings! I'm a 24 year old web developer based in Columbus, Ohio. In 2019 I graduated Miami University with a Bachelor of Science in Computer Science.";
+    const cardContent1 = "Greetings! I'm a 25 year old web developer based in Columbus, Ohio. In 2019 I graduated Miami University with a Bachelor of Science in Computer Science.";
 
     const cardContent2 = "My focus is on front-end web development. I've obtained over two years of E-Commerce experience working for Ascena and Opcapita brands such as Justice, Dressbarn, and maurices.";
 
     const cardContent3 = "I take designs and bring them to life on the web while ensuring responsiveness, cross browser compatibility, and WCAG2 and ADA compliance. A more accessible web is a more inclusive web."
 
-    const cardContent4 = "I'm currently searching for the next step in my career, and am looking to continue growing my front-end skills!";
+    const cardContent4 = "I'm currently working as a Software Engineer for g2o, consulting on the Innovate Ohio Project to revamp many core .gov websites for the State of Ohio.";
 
     return (
         <div className="relative flex flex-col h-full dark:bg-gray-700 dark:text-white min-h-screen">
